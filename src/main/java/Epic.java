@@ -13,6 +13,7 @@ public class Epic extends Task {
     public String[] getSubtasks() {
         return subtasks;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -28,6 +29,7 @@ public class Epic extends Task {
         result = 31 * result + Arrays.hashCode(subtasks);
         return result;
     }
+
     @Override
     public boolean matches(String query) {
         for (String subtask : subtasks) {

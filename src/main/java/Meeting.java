@@ -19,9 +19,11 @@ public class Meeting extends Task {
     public String getProject() {
         return project;
     }
+
     public String getStart() {
         return start;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -42,6 +44,7 @@ public class Meeting extends Task {
         }
         return false;
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), topic, project, start);
